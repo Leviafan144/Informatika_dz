@@ -11,8 +11,15 @@ def first(x):
     print(x)
     print(w,w+1)
 
-n=int(input())
-a=int(input())
-b=int(input())
+def test(lst, res):
+    if first(lst) == res:
+        print("OK")
+    else:
+        print('Error', lst)
 
-x=[randint(a,b) for i in range(n)]
+#n=int(input())
+#a=int(input())
+#b=int(input())
+
+#x=[randint(a,b) for i in range(n)]
+#first(x)
