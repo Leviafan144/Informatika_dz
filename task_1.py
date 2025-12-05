@@ -1,19 +1,18 @@
 from random import*
 
-def first(x):
+def first(x,n):
     m=x[0]+x[1]
     w=0
     for i in range(n-1):
         r=x[i]+x[i+1]
-        if  r<m:
+        if  r<=m:
             m=r
             w=i
-    print(x)
-    print(w,w+1)
+    return [w,w+1]
 
-def test(lst, res):
-    if first(lst) == res:
-        print("OK")
+def test(lst, res, n):
+    if first(lst,n) == res:
+        print("OK", lst)
     else:
         print('Error', lst)
 
@@ -23,3 +22,6 @@ def test(lst, res):
 
 #x=[randint(a,b) for i in range(n)]
 #first(x)
+test([0,1,2],[0,1],3)
+test([0,0,0],[1,2],3)
+test([-1,-1,3,2,-4,7],[3,4],6)
