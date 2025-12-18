@@ -8,5 +8,5 @@ def Eratosthen(n):
     return result
 
 a=int(input())
-p=Eratosthen(10000)
+p=Eratosthen(100000)
 print(p[a+1])
